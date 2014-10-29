@@ -1,0 +1,28 @@
+gource \
+--logo ~/path/to/logo.png \
+--user-image-dir ~/path/to/user-image-directory \
+-e .25 \
+--key \
+--title "Title of Video" \
+--file-extensions \
+--file-idle-time 0 \
+--max-files 0 \
+--hide usernames \
+-853x480 \
+-s 10 \
+-o - \
+--camera-mode track \
+./ \
+| \
+ffmpeg \
+-y \
+-r 60 \
+-f image2pipe \
+-vcodec ppm \
+-i - \
+-vcodec libx264 \
+-preset ultrafast \
+-crf 1 \
+-threads 0 \
+-bf 0 \
+~/path/to/video.mp4
