@@ -6,13 +6,16 @@ dependencies to render them. To install Gource follow these directions.
 
 `brew install gource`
 
-Once installed, just update the configuration template and update the
-appropriate lines of the config file and run it with this command.
+Once installed. Execute the config.gource file in the appropriate directory
+and let Gource do it's thing.
 
-`gource --load-config path/to/config`
+`./config.gource`
 
-Make sure to update the path at which the .git or .svn directory exist in
-within the contents of the config file.
+Make sure to:
+
+1. Update the path at which the .git or .svn directory exist in within
+the contents of the config file.
+2. Run the script from inside the directory.
 
 ##### TODO
 
