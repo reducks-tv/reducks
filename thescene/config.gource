@@ -1,0 +1,30 @@
+#!/bin/sh
+
+gource \
+--logo ./thescene-logo.png \
+--user-image-dir ./thescene-devs \
+-e .25 \
+--key \
+--title "The Scene: Not Every Video. Just the Ones Worth Talking About." \
+--file-extensions \
+--file-idle-time 0 \
+--max-files 0 \
+--hide usernames \
+-853x480 \
+-s 10 \
+-o - \
+--camera-mode track \
+../../thescene/ \
+| \
+ffmpeg \
+-y \
+-r 60 \
+-f image2pipe \
+-vcodec ppm \
+-i - \
+-vcodec libx264 \
+-preset ultrafast \
+-crf 1 \
+-threads 0 \
+-bf 0 \
+./thescene-gource.mp4
