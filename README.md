@@ -1,6 +1,25 @@
 # Reducks
 
-`quack`
+```
+			           ,-.
+         ,--' ~.).
+       ,'         `.
+      ; (((__   __)))
+      ;  ( (#) ( (#)
+      |   \_/___\_/|
+     ,"  ,-'    `__".           .
+    (   ( ._   ____`.)--._        _
+     `._ `-.`-' \(`-'  _  `-. _,-' `-/`.
+      ,')   `.`._))  ,' `.   `.  ,','  ;
+    .'   .    `--'  /     ).   `.      ;
+   ;      `-       /     '  )         ;
+   \                       ')       ,'
+    \                     ,'       ;
+     \               `~~~'       ,'
+      `.                      _,'
+quack!  `.                ,--'
+          `-._________,--'
+```
 
 Reducks is a tool to create animated visualizations of work on either a single
 repository, or a series of repositories that match a regular expression pattern,
