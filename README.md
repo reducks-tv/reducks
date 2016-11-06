@@ -89,3 +89,7 @@ Please refer to the [contributing documentation](CONTRIBUTING.md).
 ## License
 
 Please refer to the [license documentation](LICENSE.md).
+
+## Dependencies
+
+Please refer to the [dependencies documentation](DEPENDENCIES.md).
