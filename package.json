@@ -26,6 +26,7 @@
   "homepage": "https://github.com/rogeruiz/reducks#readme",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.0",
+    "mori": "^0.3.2",
     "simple-git": "^1.61.0"
   },
   "devDependencies": {
