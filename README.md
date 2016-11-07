@@ -1,5 +1,7 @@
 # Reducks
 
+[![Build Status](https://travis-ci.org/rogeruiz/reducks.svg?branch=master)](https://travis-ci.org/rogeruiz/reducks)
+
 ```
 			           ,-.
          ,--' ~.).
