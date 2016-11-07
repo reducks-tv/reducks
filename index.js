@@ -12,7 +12,7 @@ getLog( currentRepo )
     return Promise.all( mori.intoArray( pendingFiles ) )
   } )
   .then( function ( commits ) {
-    var buildLines = customLog( commits, 'code_swarm' )
+    var buildLines = customLog( commits/**, 'code_swarm'*/ )
     return Promise.all( mori.intoArray( buildLines ) )
   } )
   .then( function ( lines ) {

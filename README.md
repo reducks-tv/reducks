@@ -78,9 +78,25 @@ After those dependencies are met, you should be able to run the scripts in the
 `source/` directories to create visualizations, animated gifs, or mpeg videos
 for your repositories.
 
-### Better guidance around installation
+### Better guidance around use
 
-> TODO
+```shell
+npm install
+```
+
+Once everything is installed you can run the tests which will run against the
+current repository.
+
+```shell
+npm test
+```
+
+To generate a configuration file against the current repository, you can simply
+start.
+
+```shell
+npm start
+```
 
 ## Development
 
