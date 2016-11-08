@@ -15,9 +15,9 @@ t.test( 'Get Files test', function ( t ) {
 
   t.plan( 1 )
 
-  return mori.first( getFiles( currentRepo, mori.set( [ testLog ] ) ) )
-    .then( function ( commit ) {
-      t.ok( commit.files )
+  return getFiles( currentRepo, mori.set( [ testLog ] ) )
+    .then( function ( commits ) {
+      t.ok( commits[ 0 ].files )
       t.end()
     } )
     .catch( t.threw )

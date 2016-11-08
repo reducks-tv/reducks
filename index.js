@@ -6,20 +6,17 @@ const customLog = require( './lib/custom-log' )
 
 getLog( currentRepo )
   .then( function ( data ) {
-    return getFiles( currentRepo, mori.set( data.all ) )
-  } )
-  .then( function ( pendingFiles ) {
-    return Promise.all( mori.intoArray( pendingFiles ) )
+    var commits = mori.set( data.all )
+    return getFiles( currentRepo, commits )
   } )
   .then( function ( commits ) {
-    var buildLines = customLog( commits/**, 'code_swarm'*/ )
-    return Promise.all( mori.intoArray( buildLines ) )
+    return customLog( commits, 'gource' )
   } )
   .then( function ( lines ) {
-    lines = mori.flatten( lines )
-    console.log( mori.intoArray( lines ).join( '\n' ) )
+    var flat = mori.intoArray( mori.flatten( lines ) )
+    console.log( flat.join( '\n' ) )
   } )
   .catch( function ( error ) {
-    console.error( error )
+    throw new Error( error )
   } )
 

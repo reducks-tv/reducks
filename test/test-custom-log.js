@@ -13,9 +13,9 @@ t.test( 'Custom log produces Gource lines', function ( t ) {
 
   t.plan( 2 )
 
-  return mori.first( customLog( [ testCommit ] ) )
-    .then( function ( line ) {
-      line = mori.first( line )
+  return customLog( [ testCommit ] )
+    .then( function ( lines ) {
+      var line = mori.first( mori.flatten( lines ) )
       t.ok( line )
       t.equal( 4, line.split( ' | ' ).length )
       t.end
@@ -28,9 +28,9 @@ t.test( 'Custom log produces Code_Swarm lines', function ( t ) {
 
   t.plan( 4 )
 
-  return mori.first( customLog( [ testCommit ], 'code_swarm' ) )
-    .then( function ( line ) {
-      line = mori.first( line )
+  return customLog( [ testCommit ], 'code_swarm' )
+    .then( function ( lines ) {
+      var line = mori.first( mori.flatten( lines ) )
       t.ok( line )
       t.match( line, /author=".+"/ )
       t.match( line, /date=".+"/ )
