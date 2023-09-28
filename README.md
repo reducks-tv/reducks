@@ -65,13 +65,14 @@ taste in one's mouth. Ignorance is bliss and all that.
 
 ## Installation
 
-In order to use Reducks, you will need to install `gource` and `ffmpeg`. If
+In order to use Reducks, you will need to install `gource`, `ffmpeg`, and `supercollider`. If
 you're using macOS and Homebrew, you should be able to easily install them with
 the following commands.
 
 ```shell
 brew install gource
 brew install ffmpeg
+brew install --cask supercollider
 ```
 
 After those dependencies are met, you should be able to run the scripts in the
