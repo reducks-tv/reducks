@@ -1,0 +1,35 @@
+{
+  "name": "reducks",
+  "version": "1.0.0",
+  "description": "Reducks is a tool to create animated visualizations of work on either a single repository, or a series of repositories that match a regular expression pattern, to help give a different perspective of work done in git. Consider it like rubber-ducking for your workflows and processes for teams.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "tap test/**/test-*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogeruiz/reducks.git"
+  },
+  "keywords": [
+    "review",
+    "git",
+    "teams",
+    "rubber-ducking",
+    "visualizations"
+  ],
+  "author": "Roger Steve Ruiz <hi@rog.gr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rogeruiz/reducks/issues"
+  },
+  "homepage": "https://github.com/rogeruiz/reducks#readme",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.0",
+    "mori": "^0.3.2",
+    "simple-git": "^1.61.0"
+  },
+  "devDependencies": {
+    "tap": "^8.0.0"
+  }
+}
